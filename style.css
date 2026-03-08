@@ -7,7 +7,7 @@ h3 {
   display: inline-block;
 }
 
-body{
+body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -23,7 +23,7 @@ header {
 
 header ul,
 footer ul {
-  font-family:  "Zen Kaku Gothic Antique", sans-serif;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
 }
 
 .logo img {
@@ -82,6 +82,10 @@ nav a:hover {
 
 .menu-btn span:after {
   top: 8px;
+}
+
+#menu-btn-check {
+  display: none;
 }
 
 #menu-btn-check:checked~.menu-btn span {
@@ -194,9 +198,10 @@ h1 {
   font-size: 3rem;
 }
 
-.coupon-title,.coupon-text{
+.coupon-title,
+.coupon-text {
   font-weight: bold;
-} 
+}
 
 .coupon-title {
   font-size: 1.2rem;
@@ -425,26 +430,27 @@ footer {
 }
 
 .backtop {
-    height: 50px;
-    width: 50px;
-    position: fixed;
-    right: 2rem;
-    bottom: 2rem;
-    background: #fff;
-    opacity: 0.9;
-    border: solid 2px #3f6066;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  background: #fff;
+  opacity: 0.9;
+  border: solid 2px #3f6066;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
+
 .backtop__arrow {
-    height: 10px;
-    width: 10px;
-    border-top: 3px solid #3f6066;
-    border-right: 3px solid #3f6066;
-    transform: translateY(20%) rotate(-45deg);
+  height: 10px;
+  width: 10px;
+  border-top: 3px solid #3f6066;
+  border-right: 3px solid #3f6066;
+  transform: translateY(20%) rotate(-45deg);
 }
 
 @media (min-width: 768px) {
@@ -632,14 +638,14 @@ footer {
     margin-bottom: 3rem;
   }
 
-  .backtop{
+  .backtop {
     bottom: 1rem;
     right: 1rem;
     width: 40px;
     height: 40px;
   }
 
-  .backtop__arrow{
+  .backtop__arrow {
     width: 8px;
     height: 8px;
   }
