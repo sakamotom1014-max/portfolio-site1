@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+    <title>国内旅行|旅彩トラベル</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="img/logo.png" alt="旅彩トラベル"></a>
+        </div>
+        <div class="pcmenu">
+            <nav>
+                <ul>
+                    <li><a href="#">ホーム</a></li>
+                    <li><a href="#">国内</a></li>
+                    <li><a href="#">海外</a></li>
+                    <li><a href="#">会社情報</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="spmenu">
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="#">ホーム</a></li>
+                    <li><a href="#">国内</a></li>
+                    <li><a href="#">海外</a></li>
+                    <li><a href="#">会社情報</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="search">
+            <div class="container search-head">
+                <div class="col_2">
+                    <div class="page-title">
+                        <h1>あなたに<span class="break">ぴったりの旅を</span><span class="break">みつけよう</span></h1>
+                    </div>
+                    <a href="#" class="coupon">
+                        <div class="coupon-icon">🎁</div>
+                        <div class="coupon-text">
+                            <p class="coupon-title">お得なクーポン配布中！</p>
+                            <p class="coupon-ex">今だけの限定キャンペーンは<span class="break">こちら</span></p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col_2">
+                    <div class="form-area">
+                        <form id="search-form" action="/search" method="get" aria-label="ツアー検索フォーム">
+                            <div class="form-row">
+                                <label for="from">出発地</label>
+                                <input id="from" name="from" type="text" list="places-from" placeholder="例: 福岡"
+                                    required>
+                                <datalist id="places-from">
+                                    <option value="福岡"></option>
+                                    <option value="東京"></option>
+                                    <option value="大阪"></option>
+                                    <option value="札幌"></option>
+                                </datalist>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="to">目的地</label>
+                                <input id="to" name="to" type="text" list="places-to" placeholder="例: 沖縄" required>
+                                <datalist id="places-to">
+                                    <option value="沖縄"></option>
+                                    <option value="京都"></option>
+                                    <option value="広島"></option>
+                                    <option value="長崎"></option>
+                                </datalist>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="depart-date">出発日</label>
+                                <input id="depart-date" name="depart" type="date" required>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="return-date">帰着日（任意）</label>
+                                <input id="return-date" name="return" type="date">
+                            </div>
+
+                            <div class="form-row actions">
+                                <button type="submit">検索</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">おすすめツアー</h2>
+                <div class="tour-list">
+                    <article class="tour-card">
+                        <a href="#" class="card-link"></a>
+                        <img src="img/hokkaido.jpg" alt="北海道">
+                        <h3 class="card-head">北海道</h3>
+                        <ul>
+                            <li>往復航空券付き</li>
+                            <li>朝夕食付き</li>
+                            <li>添乗員同行</li>
+                        </ul>
+                        <p class="price">49,800<span class="tax">円～</span></p>
+                        <a class="triangle-btn">プランを<br class="brpc">見る</a>
+                        <p class="plane-btn">プランを見る</p>
+                    </article>
+                    <article class="tour-card">
+                        <a href="#" class="card-link"></a>
+                        <img src="img/okinawa.jpg" alt="沖縄">
+                        <h3 class="card-head">沖縄</h3>
+                        <ul>
+                            <li>往復航空券付き</li>
+                            <li>リゾートホテル宿泊</li>
+                            <li>レンタカー付き</li>
+                        </ul>
+                        <p class="price">39,800<span class="tax">円～</span></p>
+                        <a class="triangle-btn">プランを<br class="brpc">見る</a>
+                        <p class="plane-btn">プランを見る</p>
+                    </article>
+                    <article class="tour-card">
+                        <a href="#" class="card-link"></a>
+                        <img src="img/kyoto.jpg" alt="京都">
+                        <h3 class="card-head">京都</h3>
+                        <ul>
+                            <li>新幹線往復付き</li>
+                            <li>老舗旅館に宿泊</li>
+                            <li>朝食付き</li>
+                        </ul>
+                        <p class="price">29,800<span class="tax">円～</span></p>
+                        <a class="triangle-btn">プランを<br class="brpc">見る</a>
+                        <p class="plane-btn">プランを見る</p>
+                    </article>
+                    <article class="tour-card">
+                        <a href="#" class="card-link"></a>
+                        <img src="img/nagasaki.jpg" alt="長崎">
+                        <h3 class="card-head">長崎</h3>
+                        <ul>
+                            <li>往復航空券付き</li>
+                            <li>世界遺産巡りガイド付き</li>
+                            <li>ホテル2泊</li>
+                        </ul>
+                        <p class="price">34,800<span class="tax">円～</span></p>
+                        <a class="triangle-btn">プランを<br class="brpc">見る</a>
+                        <p class="plane-btn">プランを見る</p>
+                    </article>
+                    <article class="tour-card">
+                        <a href="#" class="card-link"></a>
+                        <img src="img/kanazawa.jpg" alt="金沢">
+                        <h3 class="card-head">金沢</h3>
+                        <ul>
+                            <li>特急サンダーバード往復</li>
+                            <li>兼六園入場券付き</li>
+                            <li>朝食付きホテル</li>
+                        </ul>
+                        <p class="price">27,800<span class="tax">円～</span></p>
+                        <a class="triangle-btn">プランを<br class="brpc">見る</a>
+                        <p class="plane-btn">プランを見る</p>
+                    </article>
+                    <article class="tour-card">
+                        <a href="#" class="card-link"></a>
+                        <img src="img/kagoshima.jpg" alt="鹿児島">
+                        <h3 class="card-head">鹿児島</h3>
+                        <ul>
+                            <li>往復航空券付き</li>
+                            <li>夕食に黒豚しゃぶしゃぶ</li>
+                            <li>温泉旅館宿泊</li>
+                        </ul>
+                        <p class="price">33,800<span class="tax">円～</span></p>
+                        <a class="triangle-btn">プランを<br class="brpc">見る</a>
+                        <p class="plane-btn">プランを見る</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">テーマ別特集</h2>
+                <div class="banner-area">
+                    <div class="col_3">
+                        <p class="banner-title">春のおすすめ</p>
+                        <a href="#"><img src="img/spring.jpg" alt="春のおすすめ"></a>
+                    </div>
+                    <div class="col_3">
+                        <p class="banner-title">温泉でゆったり</p>
+                        <a href="#"><img src="img/onsen.jpg" alt="温泉でゆったり"></a>
+                    </div>
+                    <div class="col_3">
+                        <p class="banner-title">初めての海外旅行</p>
+                        <a href="#"><img src="img/sanpietoro.jpg" alt="初めての海外旅行"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <ul>
+                        <li><a href="#">会社概要</a></li>
+                        <li><a href="#">アクセス</a></li>
+                        <li><a href="#">採用情報</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <ul>
+                        <li><a href="#">利用規約</a></li>
+                        <li><a href="#">プライバシーポリシー</a></li>
+                        <li><a href="#">特定商取引法に基づく表記</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-sns">
+                <ul>
+                    <li><a href="#" target="_blank"><img src="img/IG.png" alt="Instagram"></a></li>
+                    <li><a href="#" target="_blank"><img src="img/X.png" alt="X"></a></li>
+                    <li><a href="#" target="_blank"><img src="img/facebook.png" alt="Facebook"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer-copy">© 2026 旅彩トラベル</p>
+    </footer>
+<a href="#" class="backtop"><div class="backtop__arrow"></div></a>
+</body>
+
+</html>
