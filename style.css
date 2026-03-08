@@ -190,8 +190,11 @@ h1 {
   font-size: 3rem;
 }
 
-.coupon-title {
+.coupon-title,.coupon-text{
   font-weight: bold;
+} 
+
+.coupon-title {
   font-size: 1.2rem;
 }
 
